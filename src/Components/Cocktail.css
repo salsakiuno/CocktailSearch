@@ -1,0 +1,147 @@
+/* ===========================
+   ====== Search Box ======
+   =========================== */
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+
+}
+.search
+{
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+.search input[type="text"]
+{
+  font-family: gill sans;
+  font-size: large;
+	border: 0px;
+	padding: 10px 10px;
+  width: 100%;
+}
+
+.search input[type="text"]:focus
+{
+	outline: 0;
+}
+
+
+.search input[type="submit"]
+{
+  border: 1px solid #fff;
+	background-color: #0073e6;
+  font-family: gill sans;
+  font-size: medium;
+	color: #fff;
+	padding: 10px;
+  cursor: pointer;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* ===========================
+   ====== Cards Styles ======
+   =========================== */
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+
+.cardStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  min-height: 300px;
+  height: 434px;
+  max-height: 434px;
+  width: 350px;
+  color: white;
+  box-shadow: -36px -35px 22px -36px rgba(125,125,118,1);
+  margin: 10px;
+  transform-style: preserve-3d;
+  transition: all 1s ease 0s;
+}
+
+.cardStyle:hover {
+  transform: rotateY(180deg);
+}
+
+.face {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background-color: rgba(0, 0, 0,0.7);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.front{
+  transform: translateZ(1px)
+}
+
+.back {
+  transform: rotateY(180deg);
+  z-index: -10;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cocktailimage {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cocktail-title {
+  text-align: center;
+  font-family: 'Warnes', cursive;
+  color: white;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+.cocktail-h3 {
+  text-align: center;
+  font-family: gill sans;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cocktail-text {
+  font-family: gill sans;
+  font-size: 15px;
+  width: 90%;
+  margin: 10px;
+
+}
+
+.ingredient-list-text {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: gill sans;
+  font-size: 15px;
+}
+
+.ingredient-item {
+  margin-right: 30px;
+}
+
+.cocktail-error {
+  text-align: center;
+  font-family: 'Warnes', cursive;
+  color: white;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #7300e6, 0 0 20px #7300e6, 0 0 25px #7300e6, 0 0 30px #7300e6, 0 0 35px #7300e6;
+}
