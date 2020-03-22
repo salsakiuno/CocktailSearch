@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import SearchCocktail from './Components/SearchCocktail';
 import CocktailList from './Components/CocktailList';
+import Footer from './Components/CocktailFooter';
+import Scroll from './Components/Scroll';
 
 class App extends Component {
   constructor() {
@@ -24,10 +26,12 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1 className="background title">🍸 Welcome to Vannia's Bar, search your drink 🍹</h1>
-        <SearchCocktail onSubmit={ this.onSubmit }/>
-        <CocktailList cocktailObj={this.state.cocktailObj} apiCalled={this.state.apiCalled}/>
-        <footer>Made with lovesito by Vannia :heart:</footer>
+          <h1 className="background title">🍸 Welcome to Vannia's Bar, search your drink 🍹</h1>
+          <SearchCocktail onSubmit={ this.onSubmit }/>
+          <Scroll>
+            <CocktailList cocktailObj={this.state.cocktailObj} apiCalled={this.state.apiCalled}/>
+          </Scroll>
+          <Footer />
       </>
     );
   }
